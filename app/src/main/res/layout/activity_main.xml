@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp" tools:context=".MainActivity"
+    android:background="@drawable/we1"
+    >
+
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radiogroup1"
+
+
+        android:layout_marginBottom="6dp"
+        android:text="Ques"
+        android:textColor="#FFF"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textSize="20dp"
+        android:textColor="#FFF"
+        android:layout_above="@+id/textview1"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup1"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:text="Next"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Score"
+        android:layout_below="@+id/button1"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+
+        >
+
+        <RadioButton
+            android:id="@+id/choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/radiogroup1"
+            android:checked="true"
+            android:textColor="#FFF"
+            android:text="Choice1"
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Choice2"
+            android:textSize="30dp"
+            android:textColor="#FFF"/>
+
+        <RadioButton
+            android:id="@+id/choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice3"
+            android:textSize="30dp"
+            android:textColor="#FFF"/>
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>
